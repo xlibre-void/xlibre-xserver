@@ -4,6 +4,7 @@ pkgname=xlibre
 _pkgname=xorg
 version=25.1.0
 revision=2
+hostmakedepends="gawk"
 metapackage=yes
 depends="xorg-fonts xlibre-xserver xlibre-apps xlibre-input-drivers xlibre-video-drivers"
 short_desc="XLibre meta-package containing all essential packages for a easy to use installation"
