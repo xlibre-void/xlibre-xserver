@@ -18,8 +18,9 @@ homepage="https://github.com/X11Libre/xf86-video-intel"
 distfiles="https://github.com/X11Libre/${_pkgname}/archive/refs/tags/${pkgname}-${version}.tar.gz"
 checksum=e4513cf871374cc5df4d0ae5dcd2787539c38801295ab5a9b3470cf0dd193a43
 
-CFLAGS="-fcommon -Wno-error"
+CFLAGS="-fcommon"
 LDFLAGS="-Wl,-z,lazy"
+make_build_args="CFLAGS=-fcommon -Wno-error LDFLAGS=-Wl,-z,lazy"
 
 pre_configure() {
 	NOCONFIGURE=1 ./autogen.sh
