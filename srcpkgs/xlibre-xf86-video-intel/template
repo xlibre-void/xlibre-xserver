@@ -4,7 +4,7 @@ pkgname=xlibre-xf86-video-intel
 _pkgname=xf86-video-intel
 version=25.0.2
 revision=4
-archs="i686* x86_64*"
+# archs="i686* x86_64*"
 build_style=meson
 configure_args="-Ddri3=true -Dtearfree=true -Dvalgrind=false"
 hostmakedepends="pkg-config meson git gawk"

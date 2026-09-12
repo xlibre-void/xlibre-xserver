@@ -19,6 +19,7 @@ homepage="https://github.com/X11Libre/xf86-video-openchrome"
 distfiles="https://github.com/X11Libre/${_pkgname}/archive/refs/tags/${pkgname}-${version}.tar.gz"
 checksum=8e14401a2160c6a7174b09875b4f87d2ad92cecad51e4762fc8739a536cb835a
 
+
 CFLAGS="-I$XBPS_CROSS_BASE/usr/include/xorg -fcommon"
 LDFLAGS="-Wl,-z,lazy"
 
