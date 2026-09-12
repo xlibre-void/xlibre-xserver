@@ -8,7 +8,7 @@ revision=3
 build_style=gnu-configure
 configure_args="--prefix=/usr"
 hostmakedepends="pkg-config xlibre-xserver-devel xorgproto xorg-util-macros autoconf automake libtool git gawk"
-makedepends="xlibre-xserver-devel xorgproto fakeroot gawk gettext pkgconf"
+makedepends="xlibre-xserver-devel xorgproto xorg-util-macros fakeroot gawk gettext pkgconf"
 depends="virtual?xserver-abi-video-25_1"
 short_desc="XLibre fork of X.Org Cirrus Logic video driver"
 maintainer="Sofiya <sofiya@v.com>"
@@ -23,7 +23,8 @@ LDFLAGS="-Wl,-z,lazy"
 CFLAGS="-fcommon -Wno-pointer-arith -Wno-discarded-qualifiers -Wno-unused-label"
 
 pre_configure() {
-  NOCONFIGURE=1 ./autogen.sh
+#  NOCONFIGURE=1 ./autogen.sh
+  autoreconf -fi
 }
 
 post_install() {

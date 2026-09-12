@@ -5,6 +5,7 @@ _pkgname=xorg-input-drivers
 version=25.0.0
 revision=2
 metapackage=yes
+hostmakedepends="gawk"
 depends="
   xlibre-xf86-input-evdev>=0
   xlibre-xf86-input-synaptics>=0
