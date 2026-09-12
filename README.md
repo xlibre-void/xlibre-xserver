@@ -13,9 +13,9 @@
 [![Version](https://img.shields.io/badge/version-25.1.9-blue)](#)
 [![Repo size](https://img.shields.io/github/repo-size/xlibre-void/xlibre-xserver?style=badge&logo=protondrive&logoColor=fff&colorA=363a4f&colorB=blue)](#)
 
-[![Auto Assign](https://github.com/xlibre-void/xlibre-xserver/actions/workflows/build.yml/badge.svg)](https://github.com/xlibre-void/stable/actions/workflows/build.yml)
-[![Proof HTML](https://github.com/xlibre-void/xlibre-xserver/actions/workflows/update-template.yml/badge.svg)](https://github.com/xlibre-void/stable/actions/workflows/update-template.yml)
-[![Build](https://img.shields.io/github/actions/workflow/status/xlibre-void/xlibre-xserver/build.yml?style=badge&label=BUILD&logo=githubactions&logoColor=white&colorA=363a4f&colorB)](https://github.com/xlibre-void/stable/actions)
+[![Auto Assign](https://github.com/xlibre-void/xlibre-xserver/actions/workflows/build.yml/badge.svg)](https://github.com/xlibre-void/xlibre-xserver/actions/workflows/build.yml)
+[![Proof HTML](https://github.com/xlibre-void/xlibre-xserver/actions/workflows/update-template.yml/badge.svg)](https://github.com/xlibre-void/xlibre-xserver/actions/workflows/update-template.yml)
+[![Build](https://img.shields.io/github/actions/workflow/status/xlibre-void/xlibre-xserver/build.yml?style=badge&label=BUILD&logo=githubactions&logoColor=white&colorA=363a4f&colorB)](https://github.com/xlibre-void/xlibre-xserver/actions)
 <!--
 [![Build](https://github.com/xlibre-void/xlibre/actions/workflows/build.yml/badge.svg?style=badge&logoColor=white&colorA=363a4f&colorB)](https://github.com/xlibre-void/xlibre/actions/workflows/build.yml)
 [![Build](https://img.shields.io/github/actions/workflow/status/xlibre-void/xlibre/build.yml?style=badge&label=BUILD&logo=githubactions&logoColor=white&colorA=363a4f&colorB)](https://github.com/xlibre-void/xlibre/actions)
