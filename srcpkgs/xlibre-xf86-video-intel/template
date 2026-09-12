@@ -1,30 +1,13 @@
 # Template file for 'xf86-video-intel'
-
 pkgname=xlibre-xf86-video-intel
 _pkgname=xf86-video-intel
 version=25.0.2
-revision=4
-archs="i686* x86_64*"
-build_style=meson
-configure_args="-Ddri3=true -Dtearfree=true -Dvalgrind=false"
-hostmakedepends="pkg-config meson git gawk"
-makedepends="
- xlibre-xserver-devel
- libXScrnSaver-devel
- libXcursor-devel
- libXinerama-devel
- libXrandr-devel
- libXtst-devel
- libXvMC-devel
- xorgproto
- libdrm-devel
- fakeroot
- gawk
- gettext
- valgrind-devel
- libXdamage-devel
- libXxf86vm-devel
- autoconf automake libtool pkgconf"
+revision=3
+# archs="i686* x86_64*"
+build_style=gnu-configure
+configure_args="--with-default-dri=3 --libexecdir=/usr/lib"
+hostmakedepends="pkg-config xorg-util-macros autoconf automake libtool gawk git gawk"
+makedepends="xlibre-xserver-devel libXScrnSaver-devel libXcursor-devel libXinerama-devel libXrandr-devel libXtst-devel libXvMC-devel fakeroot gawk gettext pkgconf valgrind-devel libXdamage-devel libXxf86vm-devel"
 depends="virtual?xserver-abi-video-25_1 mesa-dri"
 short_desc="XLibre Intel video driver"
 maintainer="Sofiya <sofiya@v.com>"
@@ -37,6 +20,10 @@ checksum=e4513cf871374cc5df4d0ae5dcd2787539c38801295ab5a9b3470cf0dd193a43
 
 CFLAGS="-fcommon"
 LDFLAGS="-Wl,-z,lazy"
+
+pre_configure() {
+	NOCONFIGURE=1 ./autogen.sh
+}
 
 post_install() {
 	vlicense COPYING
