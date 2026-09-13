@@ -28,6 +28,10 @@ post_extract() {
     fi
 }
 
+#pre_build() {
+#    export CFLAGS="$CFLAGS -Wno-error=unused-but-set-variable"
+#}
+
 pre_configure() {
   NOCONFIGURE=1 ./autogen.sh
 }
