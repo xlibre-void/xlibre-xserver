@@ -106,14 +106,14 @@ conflicts="xorg-server"
 # lib32disabled=yes
 
 # disable VBE on non-x86 systems
-case "$XBPS_TARGET_MACHINE" in
-	x86_64*|i686*)
-		configure_args+=" -Dint10=x86emu"
-		;;
-	*)
-		configure_args+=" -Dint10=false"
-		;;
-esac
+#case "$XBPS_TARGET_MACHINE" in
+#	x86_64*|i686*)
+#		configure_args+=" -Dint10=x86emu"
+#		;;
+#	*)
+#		configure_args+=" -Dint10=false"
+#		;;
+#esac
 
 # Symbols must be resolved lazily for modules to work.
 # See https://bugs.freedesktop.org/show_bug.cgi?id=41208#c5
@@ -139,17 +139,17 @@ post_install() {
 	# meson не устанавливает их как SDK при -Dint10=false (non-x86),
 	# а драйверам они всё равно нужны для компиляции.
 
-	vbe_h=$(find ${wrksrc} -name 'vbe.h' | head -n1)
-	vbemodes_h=$(find ${wrksrc} -name 'vbeModes.h' | head -n1)
-	int10_h=$(find ${wrksrc} -name 'xf86int10.h' | head -n1)
+	#vbe_h=$(find ${wrksrc} -name 'vbe.h' | head -n1)
+	#vbemodes_h=$(find ${wrksrc} -name 'vbeModes.h' | head -n1)
+	#int10_h=$(find ${wrksrc} -name 'xf86int10.h' | head -n1)
 
-	if [ -z "$vbe_h" ] || [ -z "$vbemodes_h" ] || [ -z "$int10_h" ]; then
-		echo "=> WARNING: vbe.h/vbeModes.h/xf86int10.h NOT FOUND in ${wrksrc} for ${XBPS_TARGET_MACHINE} — VBE/int10 SDK headers won't be shipped!"
-	else
-		vinstall "$vbe_h" 644 usr/include/xorg
-		vinstall "$vbemodes_h" 644 usr/include/xorg
-		vinstall "$int10_h" 644 usr/include/xorg
-	fi
+	#if [ -z "$vbe_h" ] || [ -z "$vbemodes_h" ] || [ -z "$int10_h" ]; then
+	#	echo "=> WARNING: vbe.h/vbeModes.h/xf86int10.h NOT FOUND in ${wrksrc} for ${XBPS_TARGET_MACHINE} — VBE/int10 SDK headers won't be shipped!"
+	#else
+	#	vinstall "$vbe_h" 644 usr/include/xorg
+	#	vinstall "$vbemodes_h" 644 usr/include/xorg
+	#	vinstall "$int10_h" 644 usr/include/xorg
+	#fi
 }
 
 xlibre-xserver-xnest_package() {
