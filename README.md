@@ -79,8 +79,6 @@ printf "repository=https://github.com/xlibre-void/xlibre-xserver/releases/downlo
 
 ```
 
-
-
 <!-- ```
 printf "repository=https://github.com/xlibre-void/xlibre-xserver/releases/latest/download/" | sudo tee /etc/xbps.d/99-repository-xlibre-xserver.conf
 ``` -->
