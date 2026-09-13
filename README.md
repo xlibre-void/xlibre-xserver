@@ -65,8 +65,25 @@ sudo mkdir -p /etc/xbps.d
 ```
 
 ```
-printf "repository=https://github.com/xlibre-void/xlibre-xserver/releases/latest/download/" | sudo tee /etc/xbps.d/99-repository-xlibre-xserver.conf
+# aarch64
+printf "repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-aarch64" | sudo tee /etc/xbps.d/99-repository-xlibre-xserver.conf
+
+# aarch64-musl
+printf "repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-aarch64-musl" | sudo tee /etc/xbps.d/99-repository-xlibre-xserver.conf
+
+# armv7l
+printf "repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-armv7l" | sudo tee /etc/xbps.d/99-repository-xlibre-xserver.conf
+
+# armv6l-musl
+printf "repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-armv6l-musl" | sudo tee /etc/xbps.d/99-repository-xlibre-xserver.conf
+
 ```
+
+
+
+<!-- ```
+printf "repository=https://github.com/xlibre-void/xlibre-xserver/releases/latest/download/" | sudo tee /etc/xbps.d/99-repository-xlibre-xserver.conf
+``` -->
 
 > [!IMPORTANT]
 > 
@@ -141,7 +158,7 @@ sudo xbps-install -Su xlibre-minimal
 - xinit
 
 
-### Alternative method for installing XLibre
+<!-- ### Alternative method for installing XLibre
 
 _Automatically replaces X.Org server packages with Xlibre xserver packages_
 
@@ -152,6 +169,7 @@ _Automatically replaces X.Org server packages with Xlibre xserver packages_
 ```sh
 wget -O - https://github.com/xlibre-void/xlibre-xserver/raw/refs/heads/main/install-xlibre.sh | tee install-xlibre.sh && chmod +x install-xlibre.sh && sudo ./install-xlibre.sh
 ```
+-->
 
 # 📦 Available packages
 | package | source | automatic update |
