@@ -21,9 +21,16 @@ checksum=35c96222fdbce8112f3a44b63d098a8a59c5950265ccf400561e49b8010fb0f6
 CFLAGS="-fcommon"
 LDFLAGS="-Wl,-z,lazy"
 
-case "$XBPS_TARGET_MACHINE" in
-	armv6*) broken="no dri.h";;
-esac
+#case "$XBPS_TARGET_MACHINE" in
+#	armv6*) broken="no dri.h";;
+#esac
+
+#case "$XBPS_TARGET_MACHINE" in
+#	armv6*) 
+#		# Закомментированный запрет убрали, теперь чиним пути
+#		export CPPFLAGS+=" -I${XBPS_CROSS_BASE}/usr/include/libdrm"
+#		;;
+#esac
 
 pre_configure() {
    NOCONFIGURE=1 ./autogen.sh
