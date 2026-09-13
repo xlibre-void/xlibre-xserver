@@ -28,8 +28,12 @@ checksum=13d94cd94037ab950cf81a787fc9b9d87de0d2ec69ff5f4623278ea2fd27a2e6
 #    fi
 #}
 
-pre_build() {
-    export CFLAGS="$CFLAGS -Wno-error=unused-but-set-variable"
+post_extract() {
+    case "$XBPS_TARGET_MACHINE" in
+        i686*|armv6l-musl|armv7l)
+            vsed -i 's/CARD32 x;/uint32_t x;/' "${wrksrc}/src/voodoo_hardware.c"
+            ;;
+    esac
 }
 
 pre_configure() {
