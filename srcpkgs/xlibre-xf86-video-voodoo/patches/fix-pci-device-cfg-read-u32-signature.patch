@@ -1,6 +1,6 @@
 --- a/src/voodoo_hardware.c
 +++ b/src/voodoo_hardware.c
-@@ -134,7 +134,7 @@ pci_enable(VoodooPtr pVoo)
+@@ -134,7 +134,7 @@ pci_enable(VoodooPtr pVoo, int wr, int dac, int fifo)
      }
  
      if (PCI_MAP_IS64BITREG(x)) {
