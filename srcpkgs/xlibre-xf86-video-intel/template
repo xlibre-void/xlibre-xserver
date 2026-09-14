@@ -4,11 +4,11 @@ pkgname=xlibre-xf86-video-intel
 _pkgname=xf86-video-intel
 version=25.0.2
 revision=3
-archs="i686* x86_64*"
+#archs="i686* x86_64*"
 build_style=gnu-configure
 configure_args="--with-default-dri=3 --libexecdir=/usr/lib"
-hostmakedepends="pkg-config xorg-util-macros autoconf automake libtool gawk git gawk"
-makedepends="xlibre-xserver-devel libXScrnSaver-devel libXcursor-devel libXinerama-devel libXrandr-devel libXtst-devel libXvMC-devel valgrind-devel libXdamage-devel libXxf86vm-devel fakeroot gawk gettext pkgconf"
+hostmakedepends="pkg-config xlibre-xserver-devel xorgproto xorg-util-macros autoconf automake libtool gawk git gawk"
+makedepends="xlibre-xserver-devel libXScrnSaver-devel libXcursor-devel libXinerama-devel libXrandr-devel libXtst-devel libXvMC-devel valgrind-devel libXdamage-devel libXxf86vm-devel xorgproto fakeroot gawk gettext pkgconf"
 depends="virtual?xserver-abi-video-25_1 mesa-dri"
 short_desc="XLibre Intel video driver"
 maintainer="Sofiya <sofiya@v.com>"
