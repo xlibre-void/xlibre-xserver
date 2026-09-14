@@ -127,11 +127,9 @@ sudo xbps-install -Su xlibre
   - xlibre-xf86-input-synaptics
   - xlibre-xf86-input-libinput
   - xlibre-xf86-input-wacom
-  - xlibre-xf86-input-vmmouse
 - xlibre-video-drivers
   - xlibre-xf86-video-fbdev
   - xlibre-xf86-video-dummy
-  - xlibre-xf86-video-vesa
   - xlibre-xf86-video-vmware
   - xlibre-xf86-video-ati
   - xlibre-xf86-video-amdgpu
@@ -196,27 +194,18 @@ wget -O - https://github.com/xlibre-void/xlibre-xserver/raw/refs/heads/main/inst
 | xlibre-xf86-input-elographics       | https://github.com/X11Libre/elographics                 | :heavy_check_mark: |
 | xlibre-xf86-input-wacom             | https://github.com/X11Libre/xf86-input-wacom            | :heavy_check_mark: |
 | xlibre-xf86-input-wacom-devel       | https://github.com/X11Libre/xf86-input-wacom            | :heavy_check_mark: |
-| xlibre-xf86-input-vmmouse           | https://github.com/X11Libre/xf86-input-vmmouse          | :heavy_check_mark: |
 | xlibre-xf86-input-void              | https://github.com/X11Libre/xf86-input-void             | :heavy_check_mark: |
 | xlibre-xf86-video-amdgpu            | https://github.com/X11Libre/xf86-video-amdgpu           | :heavy_check_mark: |
 | xlibre-xf86-video-ati               | https://github.com/X11Libre/xf86-video-ati              | :heavy_check_mark: |
 | xlibre-xf86-video-nouveau           | https://github.com/X11Libre/xf86-video-nouveau          | :heavy_check_mark: |
-| xlibre-xf86-video-nv                | https://github.com/X11Libre/xf86-video-nv               | :heavy_check_mark: |
-| xlibre-xf86-video-openchrome        | https://github.com/X11Libre/xf86-video-openchrome       | :heavy_check_mark: |
-| xlibre-xf86-video-intel             | https://github.com/X11Libre/xf86-video-intel            | :heavy_check_mark: |
-| xlibre-xf86-video-mach64            | https://github.com/X11Libre/xf86-video-mach64           | :heavy_check_mark: |
 | xlibre-xf86-video-dummy             | https://github.com/X11Libre/xf86-video-dummy            | :heavy_check_mark: |
 | xlibre-xf86-video-fbdev             | https://github.com/X11Libre/xf86-video-fbdev            | :heavy_check_mark: |
-| xlibre-xf86-video-i128              | https://github.com/X11Libre/xf86-video-i128             | :heavy_check_mark: |
-| xlibre-xf86-video-i740              | https://github.com/X11Libre/xf86-video-i740             | :heavy_check_mark: |
-| xlibre-xf86-video-vesa              | https://github.com/X11Libre/xf86-video-vesa             | :heavy_check_mark: |
 | xlibre-xf86-video-vmware            | https://github.com/X11Libre/xf86-video-vmware           | :heavy_check_mark: |
 | xlibre-xf86-video-sisusb            | https://github.com/X11Libre/xf86-video-sisusb           | :heavy_check_mark: |
 | xlibre-xf86-video-qxl               | https://github.com/X11Libre/xf86-video-qxl              | :heavy_check_mark: |
 | xlibre-xf86-video-voodoo            | https://github.com/X11Libre/xf86-video-voodoo           | :heavy_check_mark: |
 | xlibre-xf86-video-cirrus            | https://github.com/X11Libre/xf86-video-cirrus           | :heavy_check_mark: |
 | xlibre-xf86-video-r128              | https://github.com/X11Libre/xf86-video-r128             | :heavy_check_mark: |
-| xlibre-xf86-video-s3virge           | https://github.com/X11Libre/xf86-video-s3virge          | :heavy_check_mark: |
 | xlibre-xf86-video-mga               | https://github.com/X11Libre/xf86-video-mga              | :heavy_check_mark: |
 
 
