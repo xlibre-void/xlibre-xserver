@@ -66,16 +66,16 @@ sudo mkdir -p /etc/xbps.d
 
 ```
 # aarch64
-printf "repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-aarch64" | sudo tee /etc/xbps.d/99-repository-xlibre-xserver.conf
+echo repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-aarch64 | sudo tee /etc/xbps.d/99-repository-xlibre-xserver.conf
 
 # aarch64-musl
-printf "repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-aarch64-musl" | sudo tee /etc/xbps.d/99-repository-xlibre-xserver.conf
+echo repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-aarch64-musl | sudo tee /etc/xbps.d/99-repository-xlibre-xserver.conf
 
 # armv7l
-printf "repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-armv7l" | sudo tee /etc/xbps.d/99-repository-xlibre-xserver.conf
+echo repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-armv7l | sudo tee /etc/xbps.d/99-repository-xlibre-xserver.conf
 
 # armv6l-musl
-printf "repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-armv6l-musl" | sudo tee /etc/xbps.d/99-repository-xlibre-xserver.conf
+echo repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-armv6l-musl | sudo tee /etc/xbps.d/99-repository-xlibre-xserver.conf
 
 ```
 
