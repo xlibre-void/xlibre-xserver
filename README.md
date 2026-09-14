@@ -204,7 +204,6 @@ wget -O - https://github.com/xlibre-void/xlibre-xserver/raw/refs/heads/main/inst
 | xlibre-xf86-video-sisusb            | https://github.com/X11Libre/xf86-video-sisusb           | :heavy_check_mark: |
 | xlibre-xf86-video-qxl               | https://github.com/X11Libre/xf86-video-qxl              | :heavy_check_mark: |
 | xlibre-xf86-video-voodoo            | https://github.com/X11Libre/xf86-video-voodoo           | :heavy_check_mark: |
-| xlibre-xf86-video-cirrus            | https://github.com/X11Libre/xf86-video-cirrus           | :heavy_check_mark: |
 | xlibre-xf86-video-r128              | https://github.com/X11Libre/xf86-video-r128             | :heavy_check_mark: |
 | xlibre-xf86-video-mga               | https://github.com/X11Libre/xf86-video-mga              | :heavy_check_mark: |
 
