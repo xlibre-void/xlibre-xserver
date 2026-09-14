@@ -23,7 +23,7 @@ LDFLAGS="-Wl,-z,lazy"
 
 pre_configure() {
 	autoreconf -vif
-	export ac_cv_header_xorg_dri_h=yes
+#	export ac_cv_header_xorg_dri_h=yes
 #	NOCONFIGURE=1 ./autogen.sh
 }
 
