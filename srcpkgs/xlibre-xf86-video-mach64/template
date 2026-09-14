@@ -4,7 +4,7 @@ pkgname=xlibre-xf86-video-mach64
 _pkgname=xf86-video-mach64
 version=25.0.0
 revision=1
-# archs="i686* x86_64*"
+archs="i686* x86_64*" # должен собиратся ,но несобирается (отключено для кроскомпиляции)
 build_style=gnu-configure
 configure_args="--prefix=/usr"
 hostmakedepends="pkg-config xlibre-xserver-devel xorg-util-macros autoconf automake libtool git gawk"
