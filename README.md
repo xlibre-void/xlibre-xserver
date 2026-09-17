@@ -64,7 +64,7 @@ Possible values: [flat, flat-square, plastic, badge, for-the-badge, social] -->
 sudo mkdir -p /etc/xbps.d
 ```
 
-```
+```sh
 # aarch64
 echo repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-aarch64 | sudo tee /etc/xbps.d/99-repository-aarch64.conf
 
