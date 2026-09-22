@@ -67,16 +67,18 @@ sudo mkdir -p /etc/xbps.d
 ```sh
 # aarch64
 echo "repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-aarch64" | sudo tee /etc/xbps.d/99-repository-aarch64.conf
-
+```
+```sh
 # aarch64-musl
 echo "repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-aarch64-musl" | sudo tee /etc/xbps.d/99-repository-aarch64-musl.conf
-
+```
+```sh
 # armv7l
 echo "repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-armv7l" | sudo tee /etc/xbps.d/99-repository-armv7l.conf
-
+```
+```sh
 # armv6l-musl
 echo "repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-armv6l-musl" | sudo tee /etc/xbps.d/99-repository-armv6l-musl.conf
-
 ```
 
 <!-- ```
