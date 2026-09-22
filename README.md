@@ -66,21 +66,21 @@ sudo mkdir -p /etc/xbps.d
 
 ```sh
 # aarch64
-echo repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-aarch64 | sudo tee /etc/xbps.d/99-repository-aarch64.conf
+echo "repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-aarch64" | sudo tee /etc/xbps.d/99-repository-aarch64.conf
 
 # aarch64-musl
-echo repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-aarch64-musl | sudo tee /etc/xbps.d/99-repository-aarch64-musl.conf
+echo "repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-aarch64-musl" | sudo tee /etc/xbps.d/99-repository-aarch64-musl.conf
 
 # armv7l
-echo repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-armv7l | sudo tee /etc/xbps.d/99-repository-armv7l.conf
+echo "repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-armv7l" | sudo tee /etc/xbps.d/99-repository-armv7l.conf
 
 # armv6l-musl
-echo repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-armv6l-musl | sudo tee /etc/xbps.d/99-repository-armv6l-musl.conf
+echo "repository=https://github.com/xlibre-void/xlibre-xserver/releases/download/repository-armv6l-musl" | sudo tee /etc/xbps.d/99-repository-armv6l-musl.conf
 
 ```
 
 <!-- ```
-printf "repository=https://github.com/xlibre-void/xlibre-xserver/releases/latest/download/" | sudo tee /etc/xbps.d/99-repository-xlibre-xserver.conf
+printf "repository=https://github.com/xlibre-void/xlibre-xserver/releases/latest/download" | sudo tee /etc/xbps.d/99-repository-xlibre-xserver.conf
 ``` -->
 
 > [!IMPORTANT]
