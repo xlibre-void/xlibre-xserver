@@ -152,7 +152,7 @@ sudo xbps-install -Su xlibre-minimal
 - xinit
 
 
-<!-- ### Alternative method for installing XLibre
+### Alternative method for installing XLibre
 
 _Automatically replaces X.Org server packages with Xlibre xserver packages_
 
@@ -163,7 +163,6 @@ _Automatically replaces X.Org server packages with Xlibre xserver packages_
 ```sh
 wget -O - https://github.com/xlibre-void/xlibre-xserver/raw/refs/heads/main/install-xlibre.sh | tee install-xlibre.sh && chmod +x install-xlibre.sh && sudo ./install-xlibre.sh
 ```
--->
 
 # 📦 Available packages
 | package | source | automatic update |
