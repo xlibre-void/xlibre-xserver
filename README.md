@@ -50,7 +50,7 @@ Possible values: [flat, flat-square, plastic, badge, for-the-badge, social] -->
 [![x86_64-musl](https://img.shields.io/badge/aarch64-musl-478061?style=plastic&colorA=363a4f&colorB)](#)
 [![x85_64-glibc](https://img.shields.io/badge/armv7l-glibc-478061?style=plastic&colorA=363a4f&colorB)](#)
 [![x86_64-musl](https://img.shields.io/badge/armv6l-musl-478061?style=plastic&colorA=363a4f&colorB)](#)
-> ⮞ $${\color{red}Test \ build}$$
+> <!-- ⮞ $${\color{red}Test \ build}$$ -->
 
 > [!NOTE]
 >>  _How to use_
