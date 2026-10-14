@@ -1,4 +1,4 @@
-name: Cleanup Void Package Branch Runs
+name: 🗑️ Cleanup Void Package Branch Runs
 
 on:
   schedule:
