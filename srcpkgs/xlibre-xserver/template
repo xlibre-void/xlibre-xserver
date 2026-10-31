@@ -1,5 +1,4 @@
 # Template file for 'xlibre-xserver'
-
 pkgname=xlibre-xserver
 version=25.1.11
 revision=1
