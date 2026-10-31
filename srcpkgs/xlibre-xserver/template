@@ -105,14 +105,14 @@ conflicts="xorg-server"
 # lib32disabled=yes
 
 # disable VBE on non-x86 systems
-#case "$XBPS_TARGET_MACHINE" in
-#	x86_64*|i686*)
-#		configure_args+=" -Dint10=x86emu"
-#		;;
-#	*)
-#		configure_args+=" -Dint10=false"
-#		;;
-#esac
+case "$XBPS_TARGET_MACHINE" in
+	x86_64*|i686*)
+		configure_args+=" -Dint10=x86emu"
+		;;
+	*)
+		configure_args+=" -Dint10=false"
+		;;
+esac
 
 # Symbols must be resolved lazily for modules to work.
 # See https://bugs.freedesktop.org/show_bug.cgi?id=41208#c5
