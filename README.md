@@ -10,7 +10,7 @@
 [![Security Audit](https://img.shields.io/github/actions/workflow/status/Letdown2491/waypoint-gtk/security.yml?label=Security%20Audit&logo=github&colorA=363a4f&colorB)](#)
 [![Platform](https://img.shields.io/badge/platform-Void%20Linux-478061?logo=linux&colorA=363a4f)](#)
 [![Xlibre](https://img.shields.io/badge/xlibre-void/xlibre-xserver?style=badge&label=Xlibre-Void&logo=X&colorA=363a4f&colorB=df8e1d)](#)
-[![Version](https://img.shields.io/badge/version-25.1.9-blue)](#)
+[![Version](https://img.shields.io/badge/version-25.1.11-blue)](#)
 [![Repo size](https://img.shields.io/github/repo-size/xlibre-void/xlibre-xserver?style=badge&logo=protondrive&logoColor=fff&colorA=363a4f&colorB=blue)](#)
 
 [![Auto Assign](https://github.com/xlibre-void/xlibre-xserver/actions/workflows/build-releases.yaml/badge.svg)](https://github.com/xlibre-void/xlibre-xserver/actions/workflows/build.yml)
