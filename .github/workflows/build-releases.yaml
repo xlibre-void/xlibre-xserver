@@ -109,8 +109,8 @@ jobs:
             cp -rv extra/srcpkgs/* void-packages/srcpkgs/
 
             SHLIBS_FILE="void-packages/common/shlibs"
-            APPEND_FILE="extra/shlibs_append"
-            REMOVE_FILE="extra/shlibs_remove"
+            APPEND_FILE="extra/common/shlibs"
+            REMOVE_FILE="extra/common/shlibs_remove"
 
             echo "==> updating common/shlibs..."
             if [ -f "$REMOVE_FILE" ]; then
